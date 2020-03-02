@@ -3,12 +3,13 @@
     <head>
         <link rel="stylesheet" href="./app.css" >
         <script type="text/javascript" src="./index.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
-        <input id="sentence" maxlength="250" onchange="maxLength()" />
-        <span>
-            <label>Available charecters limit in sentence: </label>
-            <label id="limit">250</label>
+    <body class="d-flex flex-column m-5">
+        <input placeholder="Please enter the sentence" id="sentence" class="input" maxlength="250" onkeypress="sentenceMaxLength()" />
+        <span class="displayLblSection">
+            <label class="displayLbl">Available characters limit in sentence:</label>
+            <label id="limit" class="limit">250</label>
         </span>
     </body>
 </html>
